@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(35, 35, 35);
+}
+
+p, h1 {
+    color: azure;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    padding: 20px;
+    color: rgb(0, 128, 255);
+    font-style: italic;
+    letter-spacing: 7.5px;
+}
+
+.subtext {
+    font-size: 80px;
+    color: blue;
+    font-style: italic;
+    letter-spacing: 7.5px;
+    transition-duration: 1s;
+}
+
+.subtext:hover {
+    letter-spacing: 15px;
+}
+
+.starting, .ending {
+    font-size: 30px;
+    transition-duration: 1s;
+}
+
+.starting:hover,
+.ending:hover {
+    /* font-size: 40px; */
+    color: #b3fcff;
+    letter-spacing: 10px;
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    perspective: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card {
+    height: 100%;
+    border-radius: 50px;
+    border-color: aliceblue;
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(52, 52, 52) 100%);
+    transition: all 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+  }
+  
+  .content {
+    padding: 60px;
+    transform: translate3d(0, 0, 26px);
+  }
+  
+  .content .title {
+    display: block;
+    color: blue;
+    font-weight: 900;
+    font-size: 100px;
+  }
+  
+  
+  
+  
+  .parent:hover .card {
+    transform: rotate3d(1, 1, 0, 30deg);
+    box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
+  }
+  
+  
+
+.p150 {
+    font-size: 150px;
+}
+
+.p1502 {
+    padding: 30px;
+}
+
+  
+.glow {
+    color: #b3fcff;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1b00e6, 0 0 40px #1b00e6, 0 0 50px #1b00e6, 0 0 60px #1b00e6, 0 0 70px #1b00e6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #008ee6, 0 0 40px #008ee6, 0 0 50px #008ee6, 0 0 60px #008ee6, 0 0 70px #008ee6, 0 0 80px #008ee6;
+    }
+  }
+
+  .firework {
+    background-image: url('firework.jpg');
+  }
